@@ -43,16 +43,16 @@ export function BookDetail() {
     <div className="max-w-5xl mx-auto p-6 relative">
       <Link
         to="/home"
-        className="absolute top-6 left-[-170px] font-bold text-3xl transition"
+        className="absolute lg:top-6 lg:left-[-170px] font-bold text-3xl transition"
       >
         ←
       </Link>
 
-      <div className="flex gap-16 pt-24 items-center">
+      <div className="lg:flex lg:gap-16 grid gap-8 pt-24 items-center">
         <img
           src={coverImg}
           alt={book.title}
-          className="w-48 h-auto rounded-lg shadow"
+          className="w-48 h-auto rounded-lg shadow m-auto lg:m-0"
         />
 
         <div className="flex-1">
@@ -79,7 +79,7 @@ export function BookDetail() {
         </div>
       </div>
 
-      <div className="mt-8">
+      <div className="lg:mt-8 ">
         <h2 className="text-xl font-semibold mb-2">Summary</h2>
         <p className="text-gray-700">
           {typeof book.description === "string"
@@ -88,8 +88,7 @@ export function BookDetail() {
         </p>
       </div>
 
-      <div className="mt-8 space-y-2">
-        <h2 className="text-xl font-semibold mb-4">Book Details</h2>
+      <div className="mt-4 space-y-2">
         <p>
           <strong>Publication Date:</strong> {book.first_publish_date || "N/A"}
         </p>

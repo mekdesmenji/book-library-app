@@ -6,7 +6,7 @@ export const LandingPage = () => {
     <main className="max-w-7xl mx-auto p-6">
       <section className="text-center">
         <img
-          src="/src/images/unsplash_v4s-VeYNqHM.png"
+          src="/images/unsplash_v4s-VeYNqHM.png"
           alt="Books on a shelf"
           className="h-[500px] w-full object-cover mb-12 rounded-md "
         />
@@ -18,7 +18,7 @@ export const LandingPage = () => {
 
         <Link to="/home">
           <img
-            src="/src/images/Mask group.png"
+            src="/images/Mask group.png"
             alt="Decorative graphic"
             className="w-9 mx-auto cursor-pointer "
           />

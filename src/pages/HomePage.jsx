@@ -7,7 +7,7 @@ export const HomePage = () => {
       <div className="flex justify-between">
         <div className="flex gap-4 pl-8 pt-6  ">
           <img
-            src="src/images/unsplash_KrRgZF4NSok.png"
+            src="/images/unsplash_KrRgZF4NSok-removebg-preview.png"
             alt="Decorative graphic"
             className="w-9 cursor-pointer "
           />
@@ -16,19 +16,20 @@ export const HomePage = () => {
           </p>
         </div>
 
-        <div className="flex gap-4 pr-8 pt-6">
+        <div className="flex gap-4 pr-8 pt-6 lg:block hidden">
           <p>Favorites</p>
           <p>My Books</p>
         </div>
       </div>
 
-      <div className="grid justify-items-center mt-10">
-        <p className="text-center text-[#000000B3] text-[48px] font-medium">
-          Start your reading journey — search any title or author and
-          <br /> explore a world of stories.
+      <div className="grid justify-items-center lg:mt-10 mt-6">
+        <p className="text-center text-[#000000B3] lg:text-[48px] text-[16px] lg:font-medium">
+          Start your reading journey — search any title
+          <br className="block lg:hidden" /> or author and
+          <br className="hidden lg:block" /> explore a world of stories.
         </p>
 
-        <div className="relative w-[334px] mt-2 pl-4">
+        <div className="relative w-[334px] lg:mt-9 mt-4 pl-4">
           <input
             type="text"
             placeholder="Search for books or authors..."
@@ -39,7 +40,7 @@ export const HomePage = () => {
             aria-label="Search for books or authors"
           />
           <img
-            src="src/images/Group 11.png"
+            src="/images/Group 11.png"
             alt="Search icon"
             className="w-6 h-6 absolute top-1/2 left-8 -translate-y-1/2 pointer-events-none"
           />
@@ -49,11 +50,33 @@ export const HomePage = () => {
       <div>
         <p className="pl-12 pt-20">Popular books</p>
         <BookList />
-        <div className="flex gap-12 justify-center mt-24">
+        <div className="flex gap-12 justify-center mt-24 lg:block hidden">
           <p>Contact Us</p>
           <p>Privacy Policy</p>
           <p>Terms of Service</p>
           <p>© 2025 Book Lover</p>
+        </div>
+
+        <div className="flex gap-14 justify-center mt-10 lg:hidden bg-white py-4 shadow-inner">
+          <div className="grid justify-items-center gap-2 cursor-pointer">
+            <img src="/images/Group.png" alt="home" className="w-4 h-4" />
+            <p className="text-[10px]">Home</p>
+          </div>
+
+          <div className="grid justify-items-center gap-2 cursor-pointer">
+            <img src="/images/icon.png" alt="search" className="w-4 h-4" />
+            <p className="text-[10px]">Search</p>
+          </div>
+
+          <div className="grid justify-items-center gap-2 cursor-pointer">
+            <img src="/images/icons.png" alt="favorites" className="w-4 h-4" />
+            <p className="text-[10px]">Favorites</p>
+          </div>
+
+          <div className="grid justify-items-center gap-2 cursor-pointer">
+            <img src="/images/book.png" alt="My Books" className="w-4 h-4" />
+            <p className="text-[10px]">My Books</p>
+          </div>
         </div>
       </div>
     </div>
