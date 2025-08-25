@@ -50,7 +50,7 @@ export const HomePage = () => {
       <div>
         <p className="pl-12 pt-20">Popular books</p>
         <BookList />
-        <div className="flex gap-12 justify-center mt-24 lg:block hidden">
+        <div className="lg:flex gap-12 justify-center mt-24 hidden">
           <p>Contact Us</p>
           <p>Privacy Policy</p>
           <p>Terms of Service</p>
