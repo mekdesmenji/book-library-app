@@ -5,7 +5,7 @@ export const HomePage = () => {
   return (
     <div>
       <div className="flex justify-between">
-        <div className="flex gap-4 pl-8 pt-6  ">
+        <div className="flex gap-4 pl-8 pt-6 items-center">
           <img
             src="/images/unsplash_KrRgZF4NSok-removebg-preview.png"
             alt="Decorative graphic"
@@ -16,7 +16,7 @@ export const HomePage = () => {
           </p>
         </div>
 
-        <div className="flex gap-4 pr-8 pt-6 lg:block hidden">
+        <div className="lg:flex gap-4 pr-8 pt-6  hidden">
           <p>Favorites</p>
           <p>My Books</p>
         </div>
